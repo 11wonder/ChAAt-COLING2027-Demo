@@ -19,6 +19,12 @@ streamlit run app_demo.py
 The review demo loads bundled, precomputed results. It requires no API key and
 does not access the network.
 
+## Live demo
+
+Public URL: _to be added after deployment._ Deployment steps for Streamlit
+Community Cloud and Hugging Face Spaces are in `DEPLOY.md`. Free hosts sleep
+after inactivity, so the first visit may take about 30 seconds to wake.
+
 ## Evaluation tiers
 
 - 50-item de-duplicated diagnostic core

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""English-only demo mode for the COLING 2027 System Demonstrations video."""
+"""Reviewer demo for the COLING 2027 System Demonstrations submission."""
 
 import json
 
@@ -108,12 +108,12 @@ with st.sidebar:
         st.session_state.demo_loaded = True
     loaded = st.session_state.demo_loaded
     st.caption(
-        "The video demo uses recorded benchmark outputs, so no API credentials "
+        "This demo uses recorded benchmark outputs, so no API credentials "
         "are exposed and no model run is required."
     )
     st.divider()
     st.markdown("**Benchmark**")
-    st.write("50 hard items")
+    st.write("50 diagnostic items")
     st.write("41 exam-style items")
     st.write("6 open-ended tasks")
     st.write("Five Chinese-internal dimensions")
@@ -158,7 +158,7 @@ overall = (
 )
 
 metric_cols = st.columns(4)
-metric_cols[0].metric("Hard items", "50")
+metric_cols[0].metric("Diagnostic items", "50")
 metric_cols[1].metric("Dimensions", "5")
 metric_cols[2].metric("Models", "6")
 metric_cols[3].metric("Repeated runs", "3")
@@ -263,15 +263,15 @@ with error_tab:
                 st.markdown(f"**Model answer:** `{row['output']}`")
                 st.markdown(f"**Why it matters:** {row['explanation']}")
         st.caption(
-            "Benchmark content remains in Chinese because it is the artifact "
-            "being evaluated. System labels and explanations are in English."
+            "Benchmark content and explanations remain in Chinese because they "
+            "are the artifact being evaluated; interface labels are in English."
         )
 
 with method_tab:
     st.subheader("Three-tier benchmark")
     st.markdown(
         """
-        1. **50 hard items** test five Chinese-internal dimensions with
+        1. **50 diagnostic items** test five Chinese-internal dimensions with
            source-verified answers.
         2. **41 exam-style items**, mostly from public mock exams and
            exam-preparation material, provide ecological context.

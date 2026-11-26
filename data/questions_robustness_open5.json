@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "name": "ChAAt option-free robustness tasks",
+    "version": "1.0.0",
+    "count": 5,
+    "note": "Five open-ended tasks derived from the diagnostic core. These test unaided retrieval and explanation without answer options."
+  },
+  "questions": [
+    {
+      "id": "R-OPEN-01",
+      "dimension": "idiom",
+      "question": "不查资料，解释“曾几何时”的准确含义，并给出一个正确用法。",
+      "reference": "表示时间过去没有多久；可用于回顾近期变化，不能等同于“曾经”或“很久很久以前”。",
+      "rubric": "准确解释近期含义1分；给出合理解释或用法并避免常见误解1分。",
+      "key_points": [["没有多久", "没过多久", "不久", "时间过去没有多长"], ["近期", "最近", "变化", "不是曾经"]],
+      "subpoints": [
+        {"weight": 1, "keywords": ["没有多久", "没过多久", "不久", "时间过去没有多长"]},
+        {"weight": 1, "keywords": ["近期", "最近", "变化", "不是曾经", "并非曾经"]}
+      ],
+      "max_score": 2
+    },
+    {
+      "id": "R-OPEN-02",
+      "dimension": "pragmatics",
+      "question": "说明“令尊、家父、令郎、犬子”分别指谁，并指出哪些是敬称、哪些是谦称。",
+      "reference": "令尊=对方父亲，家父=自己父亲，令郎=对方儿子，犬子=自己儿子；令尊、令郎为敬称，家父、犬子为谦称。",
+      "rubric": "四个指称各0.5分。",
+      "subpoints": [
+        {"weight": 0.5, "requires": [["令尊"], ["对方", "他人"], ["父亲"]]},
+        {"weight": 0.5, "requires": [["家父"], ["自己", "我的"], ["父亲"]]},
+        {"weight": 0.5, "requires": [["令郎"], ["对方", "他人"], ["儿子"]]},
+        {"weight": 0.5, "requires": [["犬子"], ["自己", "我的"], ["儿子"]]}
+      ],
+      "max_score": 2
+    },
+    {
+      "id": "R-OPEN-03",
+      "dimension": "dialect",
+      "question": "说明粤语“咗、緊、過、開”各自的体意义，并各给出一个简短例子。",
+      "reference": "咗=完成体；緊=进行体；過=经历体；開=惯常体。",
+      "rubric": "四个体意义各0.5分。",
+      "subpoints": [
+        {"weight": 0.5, "requires": [["咗"], ["完成", "已经"]]},
+        {"weight": 0.5, "requires": [["緊"], ["进行", "正在"]]},
+        {"weight": 0.5, "requires": [["過"], ["经历", "曾经"]]},
+        {"weight": 0.5, "requires": [["開"], ["惯常", "一向", "习惯"]]}
+      ],
+      "max_score": 2
+    },
+    {
+      "id": "R-OPEN-04",
+      "dimension": "classical",
+      "question": "不提供选项，说明“双兔傍地走”和“走马观花”中的“走”是否同义，并解释理由。",
+      "reference": "同义，二者都保留“跑、奔驰”的古义。",
+      "rubric": "判断同义1分；说明“走”作跑、奔驰解1分。",
+      "key_points": [["同义", "相同"], ["跑", "奔跑", "奔驰"]],
+      "subpoints": [
+        {"weight": 1, "keywords": ["同义", "相同"]},
+        {"weight": 1, "keywords": ["跑", "奔跑", "奔驰"]}
+      ],
+      "max_score": 2
+    },
+    {
+      "id": "R-OPEN-05",
+      "dimension": "pragmatics",
+      "question": "给出“鸡不吃了”的两种可能解释，并说明歧义来自哪里。",
+      "reference": "可理解为鸡不再进食，或不再吃鸡；歧义来自“鸡”既可作施事也可作受事。",
+      "rubric": "两个含义各1分。",
+      "subpoints": [
+        {"weight": 1, "requires": [["鸡"], ["不吃", "不再进食", "停止进食"]]},
+        {"weight": 1, "keywords": ["不吃鸡", "不再吃鸡", "施事", "受事"]}
+      ],
+      "max_score": 2
+    }
+  ]
+}

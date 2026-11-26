@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "name": "ChAAt paraphrase robustness subset",
+    "version": "1.0.0",
+    "count": 10,
+    "dimensions": {
+      "idiom": "成语与熟语",
+      "classical": "古汉语",
+      "dialect": "方言书面语",
+      "slang": "网络新词与谐音",
+      "pragmatics": "歧义与语用"
+    },
+    "note": "Semantically equivalent rewrites of ten core items; not part of the main leaderboard."
+  },
+  "questions": [
+    {
+      "id": "P-ID-01",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于“曾几何时”的理解，下列说法哪些正确？（请选三个）",
+      "options": [
+        "A. 它表示时间还没有过去多久。",
+        "B. 它表示事情发生在很久以前。",
+        "C. 它强调某种变化发生之前的时间很短。",
+        "D. 它可以与“曾经”完全互换。",
+        "E. 它常用于回顾近期发生的变化。",
+        "F. 它表示未来某个不确定时间。"
+      ],
+      "answer": "ACE",
+      "accepted": ["ACE"],
+      "explanation": "“曾几何时”意为时间过去没有多久，常用来回顾近期变化，不等于“曾经”或“很久以前”。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/曾几何时",
+      "source_note": "改写自 FN-E8-03；汉典释义。"
+    },
+    {
+      "id": "P-ID-02",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "以下对成语义项的判断，哪些正确？（请选三个）",
+      "options": [
+        "A. “七月流火”描述暑热逐渐退去。",
+        "B. “差强人意”表示大体上还能让人满意。",
+        "C. “望其项背”表示能够赶上或比得上。",
+        "D. “炙手可热”只表示受到普遍欢迎。",
+        "E. “首当其冲”表示主动冲在最前面。",
+        "F. “别无长物”表示没有才能。"
+      ],
+      "answer": "ABC",
+      "accepted": ["ABC"],
+      "explanation": "前三项正确；“炙手可热”指权势很盛而含贬义，“首当其冲”指最先受到冲击，“别无长物”指贫穷而没有多余财物。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/望其项背",
+      "source_note": "改写自 M6-02；汉典逐项核对。"
+    },
+    {
+      "id": "P-CL-01",
+      "dimension": "classical",
+      "type": "multiple_choice",
+      "question": "《孔雀东南飞》中“处分适兄意”的“处分”，最准确的理解是：",
+      "options": [
+        "A. 安排、处置",
+        "B. 给予处罚",
+        "C. 下达命令",
+        "D. 调离职务"
+      ],
+      "answer": "A",
+      "accepted": ["安排、处置"],
+      "explanation": "此处“处分”是处理、安排的意思，不是现代常用的处罚。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/处分",
+      "source_note": "改写自 FN-E8-02；汉典“处分”义项。"
+    },
+    {
+      "id": "P-CL-02",
+      "dimension": "classical",
+      "type": "multiple_choice",
+      "question": "“吾日三省吾身”中的“三”，在句中最合适的解释是：",
+      "options": [
+        "A. 多次、反复",
+        "B. 正好三次",
+        "C. 第三遍",
+        "D. 三个人"
+      ],
+      "answer": "A",
+      "accepted": ["多次、反复"],
+      "explanation": "古汉语数词常表示约数或多次，此处不应机械理解为精确三次。",
+      "difficulty": "medium",
+      "source_ref": "https://www.51jiaoxi.com/doc-16653090.html",
+      "source_note": "改写自 RX-17。"
+    },
+    {
+      "id": "P-CL-03",
+      "dimension": "classical",
+      "type": "multiple_choice",
+      "question": "下列各组中，前后两个加点词的古今意义都保留“跑、奔驰”含义的一组是：",
+      "options": [
+        "A. 宜乎众矣 / 因地制宜",
+        "B. 使人称谢 / 千恩万谢",
+        "C. 国人道之 / 羊肠小道",
+        "D. 双兔傍地走 / 走马观花"
+      ],
+      "answer": "D",
+      "accepted": ["双兔傍地走 / 走马观花"],
+      "explanation": "其余三组中的“宜、谢、道”古今意义不同；D中两个“走”都保留奔走义。",
+      "difficulty": "hard",
+      "source_ref": "https://www.51jiaoxi.com/doc-16653090.html",
+      "source_note": "改写自 RX-19。"
+    },
+    {
+      "id": "P-DI-01",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语体标记，以下配对哪些正确？（请选三个）",
+      "options": [
+        "A. 咗：动作或状态已经完成",
+        "B. 咗：动作将要发生",
+        "C. 緊：动作正在进行",
+        "D. 開：某种行为一向如此",
+        "E. 緊：过去经历",
+        "F. 開：否定"
+      ],
+      "answer": "ACD",
+      "accepted": ["ACD"],
+      "explanation": "咗表完成，緊表进行，開表一向如此的惯常行为。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/v/96491/%E9%96%8B",
+      "source_note": "改写自 M6-09；粵典。"
+    },
+    {
+      "id": "P-DI-02",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "以下粤语否定词或情态表达，哪些释义正确？（请选三个）",
+      "options": [
+        "A. 冇：没有",
+        "B. 唔使：不必",
+        "C. 得：必须",
+        "D. 有冇：必须",
+        "E. 唔好：不要",
+        "F. 啱啱：马上"
+      ],
+      "answer": "ABE",
+      "accepted": ["ABE"],
+      "explanation": "得表示可行或获准，有冇表示有没有，啱啱表示刚刚。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/v/97926/%E5%BE%97",
+      "source_note": "改写自 HX-15；粵典。"
+    },
+    {
+      "id": "P-SL-01",
+      "dimension": "slang",
+      "type": "multiple_select",
+      "question": "关于 2024 年度流行语，以下释义哪些正确？（请选三个）",
+      "options": [
+        "A. 硬控：短时间内强烈吸引并抓住注意力",
+        "B. 银发力量：少年儿童的力量",
+        "C. 水灵灵地×××：鲜活、轻松或带调侃地描述行为",
+        "D. 智能向善：限制人工智能服务人类",
+        "E. 小孩哥/小孩姐：年纪小但某方面很厉害的人",
+        "F. 数智化：取消数据和智能技术"
+      ],
+      "answer": "ACE",
+      "accepted": ["ACE"],
+      "explanation": "银发力量指老年群体的积极作用；智能向善强调技术向善；数智化是数字化与智能化的结合。",
+      "difficulty": "hard",
+      "source_ref": "https://cagd.gov.cn/v/2024/12/6313.html",
+      "source_note": "改写自 SL-2024-01。"
+    },
+    {
+      "id": "P-PR-01",
+      "dimension": "pragmatics",
+      "type": "multiple_select",
+      "question": "关于敬称和谦称的指向，以下判断哪些正确？（请选三个）",
+      "options": [
+        "A. “犬子”用于称对方的儿子。",
+        "B. “寒舍”用于称对方的家。",
+        "C. “令尊”用于称对方的父亲。",
+        "D. “府上”用于称自己的家。",
+        "E. “家父”用于称自己的父亲。",
+        "F. “令郎”用于称对方的儿子。"
+      ],
+      "answer": "CEF",
+      "accepted": ["CEF"],
+      "explanation": "“令”类通常敬称对方亲属，“家、寒、犬”类用于谦称己方。",
+      "difficulty": "medium",
+      "source_ref": "https://www.zdic.net/hans/令尊",
+      "source_note": "改写自 HX-19；汉典。"
+    },
+    {
+      "id": "P-PR-02",
+      "dimension": "pragmatics",
+      "type": "multiple_select",
+      "question": "下列哪些句子存在结构、施受关系或修饰范围上的歧义？（请选三个）",
+      "options": [
+        "A. 发现了敌人的哨兵。",
+        "B. 他昨天买了一本书。",
+        "C. 天空很蓝。",
+        "D. 她喜欢音乐。",
+        "E. 鸡不吃了。",
+        "F. 两个学校的老师。"
+      ],
+      "answer": "AEF",
+      "accepted": ["AEF"],
+      "explanation": "A的“发现”施受关系不清，E的“鸡”可作施事或受事，F的数量关系范围不清。",
+      "difficulty": "medium",
+      "source_ref": "http://192.254.93.67/teacher_hua/200804/t20080428_16102.shtml",
+      "source_note": "改写自 HX-24。"
+    }
+  ]
+}

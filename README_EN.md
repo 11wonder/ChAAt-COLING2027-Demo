@@ -53,6 +53,24 @@ python run_paper_experiment.py `
 
 python make_paper_table.py
 python make_paper_figures.py
+python compute_bootstrap_ci.py
+python compute_pairwise_tests.py
+python audit_question_bank.py
+```
+
+Exploratory probes:
+
+```powershell
+python run_paper_experiment.py `
+  --questions data/questions_robustness_paraphrase10.json `
+  --models deepseek,qwen,glm,gpt4omini,gpt5,ollama `
+  --repeats 1 `
+  --outdir results/noweb_all/core50_paraphrase10
+
+python run_open_probe.py `
+  --questions data/questions_robustness_open5.json `
+  --models deepseek,qwen,glm,gpt4omini,gpt5,ollama `
+  --outdir results/noweb_all/core50_open5
 ```
 
 ## Licensing

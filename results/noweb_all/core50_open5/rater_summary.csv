@@ -1,0 +1,7 @@
+﻿model,score,max_score,n_tasks,accuracy
+DeepSeek Flash,8.0,10,5,0.8
+GPT-5.4,7.5,10,5,0.75
+Ollama Qwen3.5 4B,7.5,10,5,0.75
+Qwen Max,7.5,10,5,0.75
+GPT-4o mini,6.5,10,5,0.65
+GLM-4 Plus,5.5,10,5,0.55

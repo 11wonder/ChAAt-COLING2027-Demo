@@ -1,0 +1,12 @@
+{
+  "pdf": "paper_coling2027\\figs\\fig2_interface.pdf",
+  "auditable": true,
+  "minimum_required_pt": 5.0,
+  "minimum_found_pt": 5.692500277132489,
+  "text_run_count": 6,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "spacing_issue_count": 0,
+  "spacing_issues": [],
+  "warnings": []
+}

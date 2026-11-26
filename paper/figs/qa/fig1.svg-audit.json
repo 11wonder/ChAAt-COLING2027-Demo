@@ -1,0 +1,21 @@
+{
+  "svg": "paper_coling2027\\figs\\fig1_architecture.svg",
+  "verdict": "PASS WITH WARNINGS",
+  "auditable": true,
+  "width_mm": 160.0,
+  "text_count": 43,
+  "minimum_found_pt": 5.600003791669234,
+  "maximum_found_pt": 6.800004604169785,
+  "thresholds": {
+    "min_pt": 5.0,
+    "max_pt": 7.0,
+    "max_width_mm": 165.0
+  },
+  "findings": [
+    {
+      "severity": "WARN",
+      "kind": "canvas.width",
+      "message": "width 160.0 mm is not 89 mm or 183 mm"
+    }
+  ]
+}

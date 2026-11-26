@@ -1,5 +1,7 @@
 # Deploying the ChAAt reviewer demo
 
+Deployed at <https://chaat-coling2027.streamlit.app> on 2026-11-26.
+
 The demo reads bundled, precomputed results. It needs no API key and makes no
 outbound network calls, so any free Streamlit host is enough. No server or
 domain is required.

@@ -21,9 +21,12 @@ does not access the network.
 
 ## Live demo
 
-Public URL: _to be added after deployment._ Deployment steps for Streamlit
-Community Cloud and Hugging Face Spaces are in `DEPLOY.md`. Free hosts sleep
-after inactivity, so the first visit may take about 30 seconds to wake.
+<https://chaat-coling2027.streamlit.app>
+
+The app loads bundled, precomputed results without an API key or network
+access. Free Streamlit hosting sleeps after inactivity, so the first visit may
+take about 30 seconds to wake. Deployment notes are in `DEPLOY.md`; the source
+repository is <https://github.com/11wonder/ChAAt-COLING2027-Demo>.
 
 ## Evaluation tiers
 

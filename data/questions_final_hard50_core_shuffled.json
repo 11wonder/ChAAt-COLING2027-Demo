@@ -1,0 +1,1181 @@
+{
+  "meta": {
+    "name": "中文特色任务 - 最终硬核 50 题（答案顺序平衡版）",
+    "version": "3.1.0",
+    "dimensions": {
+      "idiom": "成语与熟语",
+      "classical": "古汉语",
+      "dialect": "方言书面语",
+      "slang": "网络新词与谐音",
+      "pragmatics": "歧义与语用",
+      "language_use": "字音字形与病句",
+      "culture": "文化常识"
+    },
+    "count": 50,
+    "note": "选项与答案已做确定性平衡打乱（seed=20261125）；按选项数量分别平衡正确组合。",
+    "replaced_items": [
+      {
+        "removed_id": "HX-01",
+        "removed_question": "关于下列古汉语词，哪些说法正确？（请选三个）",
+        "replacement_id": "CL-SYN-02",
+        "replacement_question": "关于《劝学》中的词义，哪些说法正确？（请选三个）"
+      },
+      {
+        "removed_id": "HX-11",
+        "removed_question": "关于下列成语，哪些说法正确？（请选三个）",
+        "replacement_id": "ID-DIS-01",
+        "replacement_question": "关于下列成语，哪些说法正确？（请选三个）"
+      },
+      {
+        "removed_id": "HX-08",
+        "removed_question": "关于下列成语，哪些说法正确？（请选三个）",
+        "replacement_id": "ID-DIS-02",
+        "replacement_question": "关于下列成语，哪些说法正确？（请选三个）"
+      },
+      {
+        "removed_id": "HX-09",
+        "removed_question": "关于下列成语，哪些说法正确？（请选三个）",
+        "replacement_id": "ID-DIS-03",
+        "replacement_question": "关于下列成语，哪些说法正确？（请选三个）"
+      },
+      {
+        "removed_id": "HX-12",
+        "removed_question": "关于下列成语，哪些说法正确？（请选三个）",
+        "replacement_id": "ID-DIS-04",
+        "replacement_question": "关于下列成语，哪些说法正确？（请选三个）"
+      },
+      {
+        "removed_id": "HX-10",
+        "removed_question": "关于下列成语，哪些说法正确？（请选三个）",
+        "replacement_id": "ID-DIS-05",
+        "replacement_question": "关于下列成语，哪些说法正确？（请选三个）"
+      },
+      {
+        "removed_id": "M6-04",
+        "removed_question": "关于粤语词，哪些说法正确？（请选三个）",
+        "replacement_id": "DIA-LEX-02",
+        "replacement_question": "关于粤语常用词，哪些说法正确？（请选三个）"
+      },
+      {
+        "removed_id": "HX-13",
+        "removed_question": "关于粤语体标记，哪些说法正确？（请选三个）",
+        "replacement_id": "DIA-SYN-01",
+        "replacement_question": "关于粤语句式与普通话意思，哪些对应正确？（请选三个）"
+      },
+      {
+        "removed_id": "FN-MS-05",
+        "removed_question": "关于网络用语，哪些说法正确？（多选）",
+        "replacement_id": "SL-2022-01",
+        "replacement_question": "关于2022年度流行语，哪些说法正确？（多选）"
+      },
+      {
+        "removed_id": "M6-05",
+        "removed_question": "关于网络用语，哪些说法正确？（请选三个）",
+        "replacement_id": "SL-2023-01",
+        "replacement_question": "关于2023年度流行语，哪些说法正确？（请选三个）"
+      },
+      {
+        "removed_id": "HX-25",
+        "removed_question": "关于2021年度网络用语，哪些说法正确？（请选三个）",
+        "replacement_id": "SL-2025-01",
+        "replacement_question": "关于2025年度流行语，哪些说法正确？（请选三个）"
+      },
+      {
+        "removed_id": "HX-30",
+        "removed_question": "关于2024年度网络用语，哪些说法正确？（请选三个）",
+        "replacement_id": "SL-2024-01",
+        "replacement_question": "关于2024年度流行语，哪些说法正确？（请选三个）"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "FN-MS-01",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于下列古汉语词，哪些说法正确？（多选）",
+      "options": [
+        "A. “将军者，国之爪牙”中“爪牙”=得力助手、勇士。",
+        "B. “率妻子邑人”中“妻子”=配偶。",
+        "C. “好恶乖迕”中“乖”=违背、不和谐。",
+        "D. “先帝不以臣卑鄙”中“卑鄙”=地位低微、见识浅陋。"
+      ],
+      "answer": "ACD",
+      "accepted": [
+        "ACD"
+      ],
+      "explanation": "“妻子”古义为妻子和儿女，不是单指配偶。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/爪牙",
+      "source_note": "汉典：爪牙可比喻勇士；乖的本义为背离、违背；妻子指妻子和儿女；卑鄙指低微鄙陋。"
+    },
+    {
+      "id": "FN-MS-02",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（多选）",
+      "options": [
+        "A. “不赞一词”原指文章写得好，别人不能再添一句话。",
+        "B. “曾几何时”指时间过去没有多久。",
+        "C. “耳提面命”指当面命令。",
+        "D. “等量齐观”指对有差异的事物同等看待。"
+      ],
+      "answer": "ABD",
+      "accepted": [
+        "ABD"
+      ],
+      "explanation": "耳提面命形容恳切地教导，不是“当面命令”。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/耳提面命",
+      "source_note": "汉典：耳提面命形容恳切地教导；不赞一词原指文章极好、别人无法再添一句；曾几何时指没过多久；等量齐观指同等看待有差异的事物。"
+    },
+    {
+      "id": "FN-MS-03",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（多选）",
+      "options": [
+        "A. “甘之如饴”指甘愿承受艰难。",
+        "B. “火中取栗”比喻受人利用、冒险出力却一无所得。",
+        "C. “间不容发”可形容情势危急到极点。",
+        "D. “屡见不鲜”指很少见。"
+      ],
+      "answer": "ABC",
+      "accepted": [
+        "ABC"
+      ],
+      "explanation": "屡见不鲜指经常见到，不是很少见。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/火中取栗",
+      "source_note": "汉典：火中取栗比喻受人利用、冒险出力却一无所得；甘之如饴指甘愿承受艰难；间不容发比喻情势危急到极点。"
+    },
+    {
+      "id": "FN-MS-04",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语词，哪些说法正确？（多选）",
+      "options": [
+        "A. “咗”表示动作完成。",
+        "B. “緊”表示动作进行。",
+        "C. “啱啱”表示马上。",
+        "D. “冇”表示没有。"
+      ],
+      "answer": "ABD",
+      "accepted": [
+        "ABD"
+      ],
+      "explanation": "啱啱表示刚刚、短时间之前，不是马上。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/v/13606/%E7%B7%8A",
+      "source_note": "粵典：咗表完成，緊表进行，冇表没有；剛才条指出啱啱表示短时间之前。"
+    },
+    {
+      "id": "SL-2022-01",
+      "dimension": "slang",
+      "type": "multiple_select",
+      "question": "关于2022年度流行语，哪些说法正确？（多选）",
+      "options": [
+        "A. “天花板”可指某一领域的最高水平或上限。",
+        "B. “拿捏”可指准确把握、掌握。",
+        "C. “雪糕刺客”指包装普通但价格异常高的雪糕。",
+        "D. “精神内耗”指精力充沛、积极乐观。"
+      ],
+      "answer": "ABC",
+      "accepted": [
+        "ABC"
+      ],
+      "explanation": "“精神内耗”指心理上无谓的自我消耗，不是积极乐观。",
+      "difficulty": "hard",
+      "source_ref": "https://study.bjwomen.gov.cn/thought/knowledge/2022/12/27/6801.shtml",
+      "source_note": "《咬文嚼字》2022年十大流行语及释义。"
+    },
+    {
+      "id": "FN-MS-06",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于古汉语词，哪些说法正确？（多选）",
+      "options": [
+        "A. “牺牲玉帛”中“牺牲”=为正义献身。",
+        "B. “可以一战”中“可以”是两个词，意为“可以凭借”。",
+        "C. “无论魏晋”中“无论”=更不必说。",
+        "D. “其实味不同”中“其实”=它的果实。"
+      ],
+      "answer": "BCD",
+      "accepted": [
+        "BCD"
+      ],
+      "explanation": "“牺牲玉帛”中“牺牲”指祭祀用的牲畜，不是献身。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/牺牲",
+      "source_note": "汉典：牺牲第一义项为祭祀用的牲畜；无论指更不必说；妻子指妻子儿女；可以一战中“可以”为两个词。"
+    },
+    {
+      "id": "FN-E8-01",
+      "dimension": "classical",
+      "type": "multiple_choice",
+      "question": "《孔雀东南飞》“可怜体无比”中“可怜”的意思是：",
+      "options": [
+        "A. 值得同情",
+        "B. 令人喜爱",
+        "C. 令人惋惜",
+        "D. 令人羡慕",
+        "E. 令人奇怪",
+        "F. 身份低微",
+        "G. 容貌可怜",
+        "H. 十分可怜"
+      ],
+      "answer": "B",
+      "accepted": [
+        "令人喜爱"
+      ],
+      "explanation": "此处“可怜”是“令人喜爱”，不是今义的“值得同情”。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/可怜",
+      "source_note": "汉典“可怜”义项：令人喜爱；书证即“可怜体无比”。"
+    },
+    {
+      "id": "FN-E8-02",
+      "dimension": "classical",
+      "type": "multiple_choice",
+      "question": "《孔雀东南飞》“处分适兄意”中“处分”的意思是：",
+      "options": [
+        "A. 处理安排",
+        "B. 处罚",
+        "C. 处分决定",
+        "D. 指挥调度",
+        "E. 吩咐交代",
+        "F. 作出决定",
+        "G. 改革",
+        "H. 批评"
+      ],
+      "answer": "A",
+      "accepted": [
+        "处理安排"
+      ],
+      "explanation": "此处“处分”意为处理安排，不是今义的处罚。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/处分",
+      "source_note": "汉典“处分”义项：处理安排事务；书证即“处分适兄意”。"
+    },
+    {
+      "id": "FN-E8-03",
+      "dimension": "idiom",
+      "type": "multiple_choice",
+      "question": "“曾几何时”的意思是：",
+      "options": [
+        "A. 曾经",
+        "B. 很久以前",
+        "C. 不知道什么时候",
+        "D. 多少次",
+        "E. 时间过去没有多久",
+        "F. 从今以后",
+        "G. 时间过得很快",
+        "H. 曾经多次"
+      ],
+      "answer": "E",
+      "accepted": [
+        "时间过去没有多久"
+      ],
+      "explanation": "“曾几何时”指没过多久，不是“曾经”。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/曾几何时",
+      "source_note": "汉典：才有多少时候，指没过多久。"
+    },
+    {
+      "id": "M6-02",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “七月流火”=天气炎热。",
+        "B. “差强人意”=大体上还能令人满意。",
+        "C. “望其项背”=赶得上、比得上。",
+        "D. “炙手可热”=权势极盛（含贬义）。",
+        "E. “首当其冲”=首先冲上去。",
+        "F. “别无长物”=没有长处。"
+      ],
+      "answer": "BCD",
+      "accepted": [
+        "BCD"
+      ],
+      "explanation": "七月流火=天气转凉；首当其冲=最先受冲击；别无长物=贫穷、没有多余东西。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/望其项背",
+      "source_note": "汉典：望其项背=赶得上，炙手可热=权势盛（贬义），差强人意=尚能满意；七月流火=转凉，首当其冲=最先受冲击，别无长物=贫穷。"
+    },
+    {
+      "id": "M6-03",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “炙手可热”=非常热门、受欢迎。",
+        "B. “明日黄花”=未来的希望。",
+        "C. “不刊之论”=不可修改的言论。",
+        "D. “目无全牛”=技艺纯熟。",
+        "E. “惨淡经营”=苦心谋划经营。",
+        "F. “曾几何时”=曾经。"
+      ],
+      "answer": "CDE",
+      "accepted": [
+        "CDE"
+      ],
+      "explanation": "炙手可热=权势极盛（贬义）；明日黄花=过时事物；曾几何时=没过多久。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/炙手可热",
+      "source_note": "汉典：炙手可热=权势盛（贬义），明日黄花=过时事物，曾几何时=没过多久；前三项释义见对应词条。"
+    },
+    {
+      "id": "DIA-LEX-02",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语常用词，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “點解”表示几点。",
+        "B. “佢”表示他或她。",
+        "C. “哋”可加在人称代词后表示复数。",
+        "D. “細佬”表示父亲。",
+        "E. “屋企”表示公司。",
+        "F. “邊個”表示谁。"
+      ],
+      "answer": "BCF",
+      "accepted": [
+        "BCF"
+      ],
+      "explanation": "“點解”表示为什么；“細佬”表示弟弟或年轻男子；“屋企”表示家。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/wan/?q=%E5%93%8B；https://words.hk/zidin/%E7%B4%B0%E4%BD%AC",
+      "source_note": "粵典 words.hk 对应词条；以上为普通话释义。"
+    },
+    {
+      "id": "SL-2023-01",
+      "dimension": "slang",
+      "type": "multiple_select",
+      "question": "关于2023年度流行语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “显眼包”指个性鲜明、常能活跃气氛的人或物。",
+        "B. “多巴胺××”指压抑、低落的风格。",
+        "C. “情绪价值”指造成经济损失。",
+        "D. “搭子”指围绕某项活动形成轻量陪伴关系的伙伴。",
+        "E. “特种兵式旅游”指长期悠闲度假。",
+        "F. “村超”指乡村足球赛事，尤指贵州榕江“村超”。"
+      ],
+      "answer": "ADF",
+      "accepted": [
+        "ADF"
+      ],
+      "explanation": "“多巴胺××”关联快乐、明亮；“情绪价值”指给人带来情绪收益；“特种兵式旅游”指高强度、短时间打卡式旅行。",
+      "difficulty": "hard",
+      "source_ref": "http://www.chinapeace.gov.cn/chinapeace/c100046/2023-12/13/content_12700574.shtml",
+      "source_note": "《咬文嚼字》2023年十大流行语。"
+    },
+    {
+      "id": "M6-07",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于下列古汉语词，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “可以一战”中“可以”=可以凭借。",
+        "B. “其实味不同”中“其实”=它的果实。",
+        "C. “备他盗之出入与非常”中“非常”=很。",
+        "D. “六国破亡之故事”中“故事”=旧事、先例。",
+        "E. “芳草鲜美”中“鲜美”=味道美。",
+        "F. “多谢后世人”中“多谢”=非常感谢。"
+      ],
+      "answer": "ABD",
+      "accepted": [
+        "ABD"
+      ],
+      "explanation": "非常=意外变故；鲜美=新鲜美好；多谢=郑重告知。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/非常",
+      "source_note": "汉典：非常=意外事变，故事=旧事先例，鲜美=新鲜美好，多谢=郑重告知；可以、其实见对应词条。"
+    },
+    {
+      "id": "M6-08",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “以邻为壑”=邻里和睦相处。",
+        "B. “阳春白雪”=通俗文艺。",
+        "C. “下车伊始”=刚下车。",
+        "D. “文不加点”=文章一气呵成、无须修改。",
+        "E. “危言危行”=正直的言论和行为。",
+        "F. “一衣带水”=水域狭窄、距离不远。"
+      ],
+      "answer": "DEF",
+      "accepted": [
+        "DEF"
+      ],
+      "explanation": "以邻为壑=转嫁祸害；阳春白雪=高雅不通俗；下车伊始=刚到任。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/文不加点",
+      "source_note": "汉典：文不加点=一气呵成，危言危行=正直言行，一衣带水=距离近；以邻为壑=转嫁祸害，阳春白雪=高雅，下车伊始=刚到任。"
+    },
+    {
+      "id": "M6-09",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语体标记，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “咗”表示动作完成。",
+        "B. “咗”表示将来。",
+        "C. “緊”表示动作进行。",
+        "D. “開”表示一向以来的习惯。",
+        "E. “緊”表示经历。",
+        "F. “開”表示否定。"
+      ],
+      "answer": "ACD",
+      "accepted": [
+        "ACD"
+      ],
+      "explanation": "咗=完成体，緊=进行体，開=惯常体；后三项均为错误配对。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/v/96491/%E9%96%8B",
+      "source_note": "粵典：開放在动词后表示一向以来的惯常之事；咗表完成，緊表进行。"
+    },
+    {
+      "id": "M6-11",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于下列古汉语词，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “多谢后世人”中“多谢”=非常感谢。",
+        "B. “国之爪牙”中“爪牙”=帮凶。",
+        "C. “可怜体无比”中“可怜”=令人喜爱。",
+        "D. “好恶乖迕”中“乖”=听话。",
+        "E. “处分适兄意”中“处分”=处理安排。",
+        "F. “烈士暮年”中“烈士”=有抱负、志向高远的人。"
+      ],
+      "answer": "CEF",
+      "accepted": [
+        "CEF"
+      ],
+      "explanation": "多谢=郑重告知；此处爪牙=得力助手/勇士；乖=违背。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/可怜",
+      "source_note": "汉典：可怜=令人喜爱，处分=处理安排，烈士=有抱负的人；多谢=郑重告知，爪牙=勇士，乖=违背。"
+    },
+    {
+      "id": "RX-06",
+      "dimension": "idiom",
+      "type": "multiple_choice",
+      "question": "下列句子中划线词语使用最恰当的一项是：",
+      "options": [
+        "A. 他们这一举措受到广大群众的欢迎，所以其他单位也纷纷效尤。",
+        "B. 骄傲自满对我们自身来讲是一个可怕的陷阱；而且这个陷阱是我们亲手挖掘的。",
+        "C. 表现在作品里，歌颂的是人民，诽谤的是鬼子、汉奸和地主。",
+        "D. 世界各个足球队都在秣马厉兵，觊觎桂冠。"
+      ],
+      "answer": "B",
+      "accepted": [
+        "骄傲自满对我们自身来讲是一个可怕的陷阱；而且这个陷阱是我们亲手挖掘的。"
+      ],
+      "explanation": "“效尤”指仿效坏的行为；“诽谤”指无中生有地毁人名誉；“觊觎”指非分地希望得到。三项均不适合各自的语境，B使用恰当。",
+      "difficulty": "medium",
+      "source_ref": "https://zy.21cnjy.com/25424046?f=beikeyi",
+      "source_note": "同上资料第6题；原题正确项在答案平衡打乱后对应B。"
+    },
+    {
+      "id": "RX-17",
+      "dimension": "classical",
+      "type": "multiple_choice",
+      "question": "（文言实词题1）下列句中加点的词解释有误的一项是：",
+      "options": [
+        "A. 择其善者而从之（从：学习）",
+        "B. 见往事耳（见：了解）",
+        "C. 吾日三省吾身（三：三次）",
+        "D. 饭疏食、饮水（饭：吃）"
+      ],
+      "answer": "C",
+      "accepted": [
+        "吾日三省吾身（三：三次）"
+      ],
+      "explanation": "“三”在文言中常泛指多次，不是确指三次。",
+      "difficulty": "medium",
+      "source_ref": "https://www.51jiaoxi.com/doc-16653090.html",
+      "source_note": "2025年中考文言文实词高效练习“题型二 判断正误型”；原题正确项在答案平衡打乱后对应C。"
+    },
+    {
+      "id": "RX-19",
+      "dimension": "classical",
+      "type": "multiple_choice",
+      "question": "（文言实词题3）下列各组句子中，加点词的古今意义相同的一项是：",
+      "options": [
+        "A. 宜乎众矣 / 因地制宜",
+        "B. 天子为动，改容式车，使人称谢 / 千恩万谢",
+        "C. 国人道之 / 羊肠小道",
+        "D. 双兔傍地走 / 走马观花"
+      ],
+      "answer": "D",
+      "accepted": [
+        "双兔傍地走 / 走马观花"
+      ],
+      "explanation": "D中两个“走”都保留“跑、奔驰”的古义；A、B、C中的加点词均在古今语境中意义不同。",
+      "difficulty": "hard",
+      "source_ref": "https://www.51jiaoxi.com/doc-16653090.html",
+      "source_note": "同上资料“题型四 辨古今异义型”；原题正确项在答案平衡打乱后对应D。"
+    },
+    {
+      "id": "CL-SYN-02",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于《劝学》中的词义，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “木直中绳”中“中”=符合。",
+        "B. “劝学”中“劝”=规劝、劝告。",
+        "C. “金就砺则利”中“金”=金属。",
+        "D. “假舟楫者”中“假”=借助。",
+        "E. “声非加疾也”中“疾”=疾病。",
+        "F. “而绝江河”中“绝”=断绝。"
+      ],
+      "answer": "ACD",
+      "accepted": [
+        "ACD"
+      ],
+      "explanation": "“劝”是勉励、鼓励；“疾”是劲疾、洪亮；“绝”在此是横渡。",
+      "difficulty": "hard",
+      "source_ref": "https://gj.zdic.net/zibu/528/13196.html",
+      "source_note": "《荀子·劝学》原文及汉典古汉语释义。"
+    },
+    {
+      "id": "HX-02",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于下列古汉语词，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “备他盗之出入与非常也”中“非常”=意外变故。",
+        "B. “六国破亡之故事”中“故事”=虚构故事。",
+        "C. “芳草鲜美”中“鲜美”=味道鲜美。",
+        "D. “其实味不同”中“其实”=实际上。",
+        "E. “来此绝境”中“绝境”=与外界隔绝的地方。",
+        "F. “可以一战”中“可以”=可以凭借。"
+      ],
+      "answer": "AEF",
+      "accepted": [
+        "AEF"
+      ],
+      "explanation": "故事=旧事先例；鲜美=新鲜美好；其实=它的果实。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/非常",
+      "source_note": "汉典：非常=意外事变，故事=旧事先例，绝境=与外界隔绝，鲜美=新鲜美好，可以=可以凭借，其实=它的果实。"
+    },
+    {
+      "id": "HX-03",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于下列古汉语词，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “先帝不以臣卑鄙”中“卑鄙”=品行恶劣。",
+        "B. “率妻子邑人”中“妻子”=妻子和儿女。",
+        "C. “无论魏晋”中“无论”=不管。",
+        "D. “牺牲玉帛”中“牺牲”=祭祀用的牲畜。",
+        "E. “阡陌交通”中“交通”=交错相通。",
+        "F. “一狼洞其中”中“洞”=名词“洞穴”。"
+      ],
+      "answer": "BDE",
+      "accepted": [
+        "BDE"
+      ],
+      "explanation": "卑鄙=地位低微见识浅陋；无论=更不必说；洞=名词作动词、打洞。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/妻子",
+      "source_note": "汉典：妻子=妻子儿女，牺牲=祭牲，交通=交错相通；卑鄙=低微鄙陋，无论=更不必说，洞=打洞。"
+    },
+    {
+      "id": "HX-04",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于文言词类活用，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “不耻下问”中“耻”是意动用法。",
+        "B. “吾妻之美我者”中“美”是使动用法。",
+        "C. “一狼洞其中”中“洞”是名词作状语。",
+        "D. “项伯杀人，臣活之”中“活”是使动用法。",
+        "E. “沛公军霸上”中“军”是名词作动词。",
+        "F. “先破秦入咸阳者王之”中“王”是名词作状语。"
+      ],
+      "answer": "ADE",
+      "accepted": [
+        "ADE"
+      ],
+      "explanation": "美=意动；洞=名词作动词；王=使动（使……为王）。",
+      "difficulty": "hard",
+      "source_ref": "https://yw.chazidian.com/mip/info64426/",
+      "source_note": "中考语文词类活用：不耻下问耻=意动，臣活之活=使动，沛公军霸上军=名词作动词。"
+    },
+    {
+      "id": "HX-05",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于文言宾语前置，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “何陋之有”是宾语前置。",
+        "B. “大王来何操”不是宾语前置。",
+        "C. “忌不自信”是宾语前置。",
+        "D. “句读之不知”不是宾语前置。",
+        "E. “辍耕之垄上”是宾语前置。",
+        "F. “沛公安在”是宾语前置。"
+      ],
+      "answer": "ACF",
+      "accepted": [
+        "ACF"
+      ],
+      "explanation": "大王来何操、句读之不知也是宾语前置；辍耕之垄上之=到，不是宾语前置。",
+      "difficulty": "hard",
+      "source_ref": "https://m.koolearn.com/zhongkao/20181128/939558.html",
+      "source_note": "新东方宾语前置讲解：何陋之有、忌不自信、沛公安在均为宾语前置。"
+    },
+    {
+      "id": "HX-06",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于文言被动句与虚词“之”，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “予独爱莲之出淤泥而不染”中“之”=的。",
+        "B. “句读之不知”中“之”=的。",
+        "C. “徒见欺”中“见”表被动。",
+        "D. “身死人手，为天下笑”中“为”表被动。",
+        "E. “不拘于时”中“于”表被动。",
+        "F. “均之二策”中“之”=的。"
+      ],
+      "answer": "CDE",
+      "accepted": [
+        "CDE"
+      ],
+      "explanation": "前三项分别用见、为、于表被动；后三项“之”分别是取消句子独立性、宾语前置标志、代词“这”。",
+      "difficulty": "hard",
+      "source_ref": "http://bj.xdf.cn/ucan1v1/chuzhongfudao/quanke/101836.html",
+      "source_note": "新东方文言虚词“之”与文言被动句资料。"
+    },
+    {
+      "id": "HX-07",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “罄竹难书”形容罪行多得写不完。",
+        "B. “三人成虎”比喻谣言重复多次使人信以为真。",
+        "C. “下车伊始”指刚下车。",
+        "D. “明日黄花”比喻未来的希望。",
+        "E. “首鼠两端”形容迟疑不决。",
+        "F. “阳春白雪”指通俗文艺。"
+      ],
+      "answer": "ABE",
+      "accepted": [
+        "ABE"
+      ],
+      "explanation": "下车伊始=刚到任；明日黄花=过时事物；阳春白雪=高雅不通俗。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/罄竹难书",
+      "source_note": "汉典：罄竹难书=罪行多，三人成虎=谣言成真，首鼠两端=迟疑；下车伊始=刚到任，明日黄花=过时，阳春白雪=高雅。"
+    },
+    {
+      "id": "ID-DIS-02",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “不足为训”指不值得作为准则。",
+        "B. “空谷足音”只指山谷中普通的脚步声。",
+        "C. “安土重迁”指安于故土，不愿轻易迁移。",
+        "D. “弹冠相庆”用于褒扬官员清正廉洁。",
+        "E. “白驹过隙”形容时间过得很慢。",
+        "F. “罪不容诛”指罪行极重，处死也不足以抵偿。"
+      ],
+      "answer": "ACF",
+      "accepted": [
+        "ACF"
+      ],
+      "explanation": "“空谷足音”比喻极难得的音信、言论或来访；“弹冠相庆”含贬义；“白驹过隙”形容时间过得很快。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/不足为训；https://www.zdic.net/hans/安土重迁；https://www.zdic.net/hans/罪不容诛；https://www.zdic.net/hans/空谷足音；https://www.zdic.net/hans/弹冠相庆；https://www.zdic.net/hans/白驹过隙",
+      "source_note": "六个说法逐一按汉典成语义项核对。"
+    },
+    {
+      "id": "ID-DIS-03",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “望洋兴叹”可指因力量不足或条件不够而感到无可奈何。",
+        "B. “始作俑者”指首先做坏事或开创恶劣风气的人。",
+        "C. “江河日下”只描述河水每天向下游流动。",
+        "D. “光怪陆离”指光彩正常、色彩单调。",
+        "E. “趋之若鹜”是褒义词，指像鸭子一样整齐列队。",
+        "F. “力透纸背”可形容书法笔锋有力或诗文深刻有力。"
+      ],
+      "answer": "ABF",
+      "accepted": [
+        "ABF"
+      ],
+      "explanation": "“江河日下”比喻情况一天天坏下去；“光怪陆离”形容奇异多彩；“趋之若鹜”多含贬义。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/望洋兴叹；https://www.zdic.net/hans/始作俑者；https://www.zdic.net/hans/力透纸背；https://www.zdic.net/hans/江河日下；https://www.zdic.net/hans/光怪陆离；https://www.zdic.net/hans/趋之若鹜",
+      "source_note": "六个说法逐一按汉典成语义项核对。"
+    },
+    {
+      "id": "ID-DIS-05",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “临渴掘井”比喻提前做好充分准备。",
+        "B. “曲突徙薪”比喻事先采取措施，防止灾祸发生。",
+        "C. “亡羊补牢”指问题无法补救，补救也没有意义。",
+        "D. “抱薪救火”指采取正确措施消除危险。",
+        "E. “防微杜渐”指在错误或坏事的苗头刚出现时就及时制止。",
+        "F. “未雨绸缪”比喻事先做好准备。"
+      ],
+      "answer": "BEF",
+      "accepted": [
+        "BEF"
+      ],
+      "explanation": "“临渴掘井”比喻事到临头才想办法；“亡羊补牢”强调出了问题及时补救；“抱薪救火”比喻措施不当，反而助长祸害。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/曲突徙薪；https://www.zdic.net/hans/防微杜渐；https://www.zdic.net/hans/未雨绸缪；https://www.zdic.net/hans/临渴掘井；https://www.zdic.net/hans/亡羊补牢；https://www.zdic.net/hans/抱薪救火",
+      "source_note": "六个说法逐一按汉典成语义项核对。"
+    },
+    {
+      "id": "ID-DIS-01",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “不名一文”指名气不大。",
+        "B. “鞭辟入里”指分析透彻深刻，切中要害。",
+        "C. “洞若观火”形容看得非常清楚。",
+        "D. “无可厚非”指完全没有可以批评之处。",
+        "E. “无所不至”指关怀照顾得非常周到。",
+        "F. “具体而微”指内容大体具备而规模较小。"
+      ],
+      "answer": "BCF",
+      "accepted": [
+        "BCF"
+      ],
+      "explanation": "“不名一文”指极其贫穷；“无可厚非”指不可过分指责，但仍有可议之处；“无所不至”指什么坏事都干得出来。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/鞭辟入里；https://www.zdic.net/hans/洞若观火；https://www.zdic.net/hans/具体而微；https://www.zdic.net/hans/不名一文；https://www.zdic.net/hans/无可厚非；https://www.zdic.net/hans/无所不至",
+      "source_note": "六个说法逐一按汉典成语义项核对。"
+    },
+    {
+      "id": "ID-DIS-04",
+      "dimension": "idiom",
+      "type": "multiple_select",
+      "question": "关于下列成语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “无所不为”指什么好事都愿意做。",
+        "B. “休戚相关”指彼此的忧喜祸福密切相关。",
+        "C. “首鼠两端”指两只老鼠分头逃跑。",
+        "D. “量入为出”指根据收入多少安排支出。",
+        "E. “良莠不齐”指优秀的人都很整齐。",
+        "F. “大快人心”指坏人受到惩罚或坏事受到打击，令人非常痛快。"
+      ],
+      "answer": "BDF",
+      "accepted": [
+        "BDF"
+      ],
+      "explanation": "“无所不为”指什么坏事都干；“首鼠两端”指迟疑不决；“良莠不齐”指好坏参差、品质不一。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/休戚相关；https://www.zdic.net/hans/量入为出；https://www.zdic.net/hans/大快人心；https://www.zdic.net/hans/无所不为；https://www.zdic.net/hans/首鼠两端；https://www.zdic.net/hans/良莠不齐",
+      "source_note": "六个说法逐一按汉典成语义项核对。"
+    },
+    {
+      "id": "DIA-SYN-01",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语句式与普通话意思，哪些对应正确？（请选三个）",
+      "options": [
+        "A. “我食少啲”=我吃多一点。",
+        "B. “俾本書我”=我给他一本书。",
+        "C. “佢瞓咗未”=他已经睡了多久。",
+        "D. “我高過你”=我比你高。",
+        "E. “佢大過我”=他比我大。",
+        "F. “你行先”=你先走。"
+      ],
+      "answer": "DEF",
+      "accepted": [
+        "DEF"
+      ],
+      "explanation": "粤语“過”可用于比较，“先”常后置；“少啲”表示少一点，“俾本書我”是给我一本书，“瞓咗未”是睡了吗。",
+      "difficulty": "hard",
+      "source_ref": "https://www.arts.cuhk.edu.hk/~lal/new/hkcolas2006.pdf；https://words.hk/zidin/%E5%92%97",
+      "source_note": "香港中文大学粤语比较句研究；完成体“咗”见粵典。"
+    },
+    {
+      "id": "HX-14",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语词，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “咁”表示什么。",
+        "B. “喺”表示在。",
+        "C. “係”表示是。",
+        "D. “睇”表示听。",
+        "E. “嘅”表示的。",
+        "F. “搵”表示看。"
+      ],
+      "answer": "BCE",
+      "accepted": [
+        "BCE"
+      ],
+      "explanation": "咁=这样/如此；睇=看；搵=找。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/%E5%96%BA",
+      "source_note": "粵典：喺=在，係=是，嘅=的；咁=这样/如此，睇=看，搵=找。"
+    },
+    {
+      "id": "HX-15",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语否定与情态，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “冇”表示没有。",
+        "B. “唔使”表示不必。",
+        "C. “得”表示必须。",
+        "D. “有冇”表示必须。",
+        "E. “唔好”表示不要。",
+        "F. “啱啱”表示马上。"
+      ],
+      "answer": "ABE",
+      "accepted": [
+        "ABE"
+      ],
+      "explanation": "得=可行/能力许可；有冇=有没有；啱啱=刚刚。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/v/97926/%E5%BE%97",
+      "source_note": "粵典：冇=没有，唔使=不必，唔好=不要；得=可行/能力许可，有冇=有没有，啱啱=刚刚。"
+    },
+    {
+      "id": "HX-16",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语常用词，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “攰”表示累。",
+        "B. “嬲”表示生气。",
+        "C. “傾偈”表示聊天。",
+        "D. “邊度”表示这里。",
+        "E. “多谢”表示对不起。",
+        "F. “食飯”表示睡觉。"
+      ],
+      "answer": "ABC",
+      "accepted": [
+        "ABC"
+      ],
+      "explanation": "邊度=哪里；多谢=谢谢；食飯=吃饭。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/v/73767/%E6%94%B0/",
+      "source_note": "粵典：攰=累，嬲=生气，傾偈=聊天；邊度=哪里，多谢=谢谢，食飯=吃饭。"
+    },
+    {
+      "id": "HX-17",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语句子的普通话意思，哪些正确？（请选三个）",
+      "options": [
+        "A. “你喺邊度”=你是谁。",
+        "B. “佢哋啱啱走咗”=他们刚刚走了。",
+        "C. “佢食緊飯”=他正在吃饭。",
+        "D. “我哋傾咗好耐”=我们聊了很久。",
+        "E. “我冇錢”=我有钱。",
+        "F. “佢好攰”=他很饿。"
+      ],
+      "answer": "BCD",
+      "accepted": [
+        "BCD"
+      ],
+      "explanation": "你喺邊度=你在哪里；我冇錢=我没钱；佢好攰=他很累。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/v/13606/%E7%B7%8A",
+      "source_note": "粵典：啱啱=刚刚，咗=完成，緊=进行，傾=聊，好耐=很久；邊度=哪里，冇=没有，攰=累。"
+    },
+    {
+      "id": "HX-18",
+      "dimension": "dialect",
+      "type": "multiple_select",
+      "question": "关于粤语句子的普通话意思，哪些正确？（请选三个）",
+      "options": [
+        "A. “佢去過香港”=他正在去香港。",
+        "B. “唔使客氣”=不客气。",
+        "C. “你唔好行咁快”=你必须走那么快。",
+        "D. “你唔好嬲”=你别生气。",
+        "E. “佢去過香港”=他去过香港。",
+        "F. “我哋傾偈”=我们站着。"
+      ],
+      "answer": "BDE",
+      "accepted": [
+        "BDE"
+      ],
+      "explanation": "唔使=不必，唔好=不要，過=经历体；傾偈=聊天。",
+      "difficulty": "hard",
+      "source_ref": "https://words.hk/zidin/v/90971/%E9%81%8E",
+      "source_note": "粵典：唔使=不必，唔好=不要，過=经历体，傾偈=聊天。"
+    },
+    {
+      "id": "HX-19",
+      "dimension": "pragmatics",
+      "type": "multiple_select",
+      "question": "关于敬谦词，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “犬子”称对方儿子。",
+        "B. “寒舍”称对方家。",
+        "C. “令尊”称对方父亲。",
+        "D. “府上”称自己家。",
+        "E. “家父”称自己父亲。",
+        "F. “令郎”称对方儿子。"
+      ],
+      "answer": "CEF",
+      "accepted": [
+        "CEF"
+      ],
+      "explanation": "犬子=自己儿子；寒舍=自己家；府上=对方家。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/令尊",
+      "source_note": "汉典：令尊=对方父亲，家父=自己父亲，令郎=对方儿子；犬子=自己儿子，寒舍=自己家，府上=对方家。"
+    },
+    {
+      "id": "HX-20",
+      "dimension": "pragmatics",
+      "type": "multiple_select",
+      "question": "关于敬谦词，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “家父”称对方父亲。",
+        "B. “令堂”称对方母亲。",
+        "C. “寒舍”称对方家。",
+        "D. “府上”称对方家。",
+        "E. “犬子”称对方儿子。",
+        "F. “拙见”称自己的见解。"
+      ],
+      "answer": "BDF",
+      "accepted": [
+        "BDF"
+      ],
+      "explanation": "家父=自己父亲；寒舍=自己家；犬子=自己儿子。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/令堂",
+      "source_note": "汉典：令堂=对方母亲，府上=对方家，拙见=自己见解；家父=自己父亲，寒舍=自己家，犬子=自己儿子。"
+    },
+    {
+      "id": "HX-21",
+      "dimension": "classical",
+      "type": "multiple_select",
+      "question": "关于六书归类，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “休”是会意字。",
+        "B. “日”是形声字。",
+        "C. “刃”是会意字。",
+        "D. “本”是指事字。",
+        "E. “武”是形声字。",
+        "F. “江”是形声字。"
+      ],
+      "answer": "ADF",
+      "accepted": [
+        "ADF"
+      ],
+      "explanation": "日=象形；刃=指事；武=会意。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/休",
+      "source_note": "汉典：休=会意（人倚木），本=指事（木下加点），江=形声（氵+工）；日象形，刃指事，武会意。"
+    },
+    {
+      "id": "HX-22",
+      "dimension": "pragmatics",
+      "type": "multiple_select",
+      "question": "下列成语中加点字的读音，哪些正确？（请选三个）",
+      "options": [
+        "A. 差强人意——chā",
+        "B. 虚与委蛇——yí",
+        "C. 暴殄天物——zhēn",
+        "D. 怙恶不悛——jùn",
+        "E. 觥筹交错——guāng",
+        "F. 茕茕孑立——qióng"
+      ],
+      "answer": "ABF",
+      "accepted": [
+        "ABF"
+      ],
+      "explanation": "殄读tiǎn，悛读quān，觥读gōng。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/差",
+      "source_note": "汉典：差强人意读chā，虚与委蛇的蛇读yí，茕茕孑立读qióng；殄tiǎn、悛quān、觥gōng。"
+    },
+    {
+      "id": "HX-23",
+      "dimension": "pragmatics",
+      "type": "multiple_select",
+      "question": "下列加点字读音，哪些正确？（请选三个）",
+      "options": [
+        "A. 薄荷——báo",
+        "B. 日薄西山——bó",
+        "C. 巷道——hàng",
+        "D. 差遣——chà",
+        "E. 参差——cī",
+        "F. 倔强——qiáng"
+      ],
+      "answer": "BCE",
+      "accepted": [
+        "BCE"
+      ],
+      "explanation": "薄荷读bò，差遣读chāi，倔强读jiàng。",
+      "difficulty": "hard",
+      "source_ref": "https://www.zdic.net/hans/薄",
+      "source_note": "汉典：日薄西山读bó，巷道读hàng，参差读cī；薄荷bò，差遣chāi，倔强jiàng。"
+    },
+    {
+      "id": "HX-24",
+      "dimension": "pragmatics",
+      "type": "multiple_select",
+      "question": "下列哪些句子有歧义？（请选三个）",
+      "options": [
+        "A. 咬死了猎人的狗。",
+        "B. 他昨天买了一本书。",
+        "C. 天空很蓝。",
+        "D. 她喜欢音乐。",
+        "E. 鸡不吃了。",
+        "F. 两个学校的老师。"
+      ],
+      "answer": "AEF",
+      "accepted": [
+        "AEF"
+      ],
+      "explanation": "前三句分别有结构、施受、数量词管辖歧义；后三句没有。",
+      "difficulty": "hard",
+      "source_ref": "http://192.254.93.67/teacher_hua/200804/t20080428_16102.shtml",
+      "source_note": "中国华文教育网与清华《现代汉语》材料。"
+    },
+    {
+      "id": "SL-2025-01",
+      "dimension": "slang",
+      "type": "multiple_select",
+      "question": "关于2025年度流行语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “谷子”可指二次元周边商品。",
+        "B. “苏超”指江苏城市足球联赛。",
+        "C. “数字游民”指固定在办公室坐班的人。",
+        "D. “活人感”指真实、生动、有生活气息的特质。",
+        "E. “具身智能”指没有物理身体的纯文本程序。",
+        "F. “赛博对账”指全部使用线下现金结算。"
+      ],
+      "answer": "ABD",
+      "accepted": [
+        "ABD"
+      ],
+      "explanation": "“数字游民”借助网络远程工作；“具身智能”强调智能体与物理身体和环境的交互；“赛博对账”指网络上的信息、经历或账目对照。",
+      "difficulty": "hard",
+      "source_ref": "https://jyt.ah.gov.cn/tsdw/ahsyywzgzwyhbgs/ywjz/40778280.html",
+      "source_note": "《咬文嚼字》2025年十大流行语。"
+    },
+    {
+      "id": "HX-26",
+      "dimension": "slang",
+      "type": "multiple_select",
+      "question": "关于网络用语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “电子榨菜”指吃饭时观看或收听的视频音频。",
+        "B. “显眼包”指显眼的包。",
+        "C. “我的眼睛就是尺”指对自己的判断非常自信。",
+        "D. “村BA”指电子竞技。",
+        "E. “特种兵式旅游”指时间短、景点多、花费少、效率高。",
+        "F. “烟火气”指战火硝烟。"
+      ],
+      "answer": "ACE",
+      "accepted": [
+        "ACE"
+      ],
+      "explanation": "显眼包=个性鲜明、能营造欢乐氛围的人或物；村BA=乡村篮球赛；烟火气=生活气息。",
+      "difficulty": "hard",
+      "source_ref": "http://news.cnr.cn/native/gd/20231212/t20231212_526517562.shtml",
+      "source_note": "2022/2023年度网络用语官方解读：电子榨菜、我的眼睛就是尺、特种兵式旅游、显眼包、村BA、烟火气均有释义。"
+    },
+    {
+      "id": "HX-27",
+      "dimension": "slang",
+      "type": "multiple_select",
+      "question": "关于2024年度网络用语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “班味儿”指上班后憔悴、疲倦、缺乏活力。",
+        "B. “松弛感”指面对压力时从容应对。",
+        "C. “City不City”指洋气不洋气、时髦不时髦。",
+        "D. “浓人淡人”指胖子瘦子。",
+        "E. “主理人”指公司保安。",
+        "F. “含金量还在上升”指价值下降。"
+      ],
+      "answer": "ABC",
+      "accepted": [
+        "ABC"
+      ],
+      "explanation": "浓人淡人=两种性格/生活态度；主理人=品牌或场所的主导者；含金量还在上升=价值上升。",
+      "difficulty": "hard",
+      "source_ref": "https://news.cnr.cn/native/gd/20241202/t20241202_526995996.shtml",
+      "source_note": "央广网2024十大流行语：City不City=时髦、洋气、现代化；中国青年报：班味儿=上班后疲惫，松弛感=从容应对压力。"
+    },
+    {
+      "id": "HX-28",
+      "dimension": "slang",
+      "type": "multiple_select",
+      "question": "关于2023年度网络用语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “数智生活”指远离数字技术的生活。",
+        "B. “爱达未来”是广州亚运口号。",
+        "C. “命运的齿轮开始转动”指改写命运的转折点。",
+        "D. “多巴胺穿搭”指用高饱和色彩营造愉悦感的穿搭。",
+        "E. “新职人”指传统手艺人。",
+        "F. “新职人”指从事新兴职业、有专业技能的人。"
+      ],
+      "answer": "CDF",
+      "accepted": [
+        "CDF"
+      ],
+      "explanation": "数智生活=数字+智能的生活；爱达未来=杭州亚运会口号。",
+      "difficulty": "hard",
+      "source_ref": "http://news.cnr.cn/native/gd/20231212/t20231212_526517562.shtml",
+      "source_note": "2023年度十大网络用语官方解读：命运的齿轮、多巴胺穿搭、新职人、数智生活、爱达未来均有释义。"
+    },
+    {
+      "id": "HX-29",
+      "dimension": "slang",
+      "type": "multiple_select",
+      "question": "关于2021年度网络用语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “YYDS”指一衣带水。",
+        "B. “破防”现指心理防线被突破。",
+        "C. “绝绝子”指断绝关系。",
+        "D. “元宇宙”指实体宇宙。",
+        "E. “躺平”指放弃反抗、以低欲望方式应对压力。",
+        "F. “双减”指减轻义务教育阶段学生作业负担和校外培训负担。"
+      ],
+      "answer": "BEF",
+      "accepted": [
+        "BEF"
+      ],
+      "explanation": "YYDS=永远的神；绝绝子=太绝了；元宇宙=虚实相融的互联网形态。",
+      "difficulty": "hard",
+      "source_ref": "http://www.news.cn/politics/2021-12/07/c_1128137881.htm",
+      "source_note": "2021年度十大网络用语官方解读。"
+    },
+    {
+      "id": "SL-2024-01",
+      "dimension": "slang",
+      "type": "multiple_select",
+      "question": "关于2024年度流行语，哪些说法正确？（请选三个）",
+      "options": [
+        "A. “硬控”可指短时间内强烈吸引并抓住注意力。",
+        "B. “银发力量”指少年儿童的力量。",
+        "C. “水灵灵地×××”可鲜活、轻松或带调侃地描述某一行为。",
+        "D. “智能向善”指限制人工智能服务人类。",
+        "E. “小孩哥/小孩姐”指年龄小但某方面表现很厉害的人。",
+        "F. “数智化”指取消数据和智能技术。"
+      ],
+      "answer": "ACE",
+      "accepted": [
+        "ACE"
+      ],
+      "explanation": "“银发力量”指老年人的积极作用；“智能向善”强调技术向善；“数智化”是数字化与智能化的融合。",
+      "difficulty": "hard",
+      "source_ref": "https://cagd.gov.cn/v/2024/12/6313.html",
+      "source_note": "《咬文嚼字》2024年十大流行语。"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use ChAAt, please cite the software and the accompanying COLING 2027 demonstration paper."
+title: "ChAAt: A Chinese-specific Ability Atlas for Probing Linguistic Diversity in Large Language Models"
+abstract: "An auditable diagnostic system that links Chinese-internal language capability gaps in LLMs to source-verified items, model outputs, explanations, and item-level statistics."
+authors:
+  - family-names: "Wan"
+    given-names: "Yankai"
+    affiliation: "Jilin University"
+version: "0.1.0"
+date-released: "2026-11-26"
+license: MIT
+keywords:
+  - Chinese language evaluation
+  - large language models
+  - linguistic diversity
+  - benchmarking
+  - system demonstration

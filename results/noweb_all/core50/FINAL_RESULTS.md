@@ -5,7 +5,8 @@ Date: 2026-11-26
 ## Protocol
 
 - Dataset: `data/questions_final_hard50_core_shuffled.json`
-- Items: 50 (idiom 13, classical 15, dialect 9, slang 8, pragmatics 5)
+- Items: 50 (idiom 13, classical 15, dialect 9, slang 8,
+  pragmatics/pronunciation 5)
 - Models: six
 - Repetitions: three at temperature 0
 - Calls: 900
@@ -32,6 +33,14 @@ The intervals use 10,000 item-cluster bootstrap resamples with seed
 
 GPT-5.4 mini scores 88.7% versus 92.0% for GPT-5.4. The models tie on 43
 items; GPT-5.4 mini wins two and GPT-5.4 wins five.
+
+## Item discrimination
+
+For each item, $D$ is the mean accuracy of the top two models minus the mean
+accuracy of the bottom two models, ranked by overall accuracy. Twelve items
+reach $D=1.00$: six classical, three Cantonese, two idiom, and one pronunciation
+item. Their pass rates range from 33% to 67%. The full calculation is in
+`item_calibration.csv`.
 
 ## Interpretation boundary
 

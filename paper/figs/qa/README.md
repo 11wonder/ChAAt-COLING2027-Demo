@@ -40,3 +40,18 @@ contract for the 160 mm COLING text block, not an uncontrolled rescale.
 The alignment gate is not applicable: neither figure is a multi-panel
 quantitative grid. Figure 1 is a schematic; Figure 2 contains one UI evidence
 plate and a process strip rather than comparable plot areas.
+
+## 2026-11-26 revision audit
+
+- Figure 1 now uses `41 exam-style items / mostly mock exams` and
+  `multi-rater review`; the SVG and PDF checks still pass.
+- Figure 3 uses the display label `Pragmatics & Pronunciation`; the heatmap is
+  generated from the same 50-item summary data as the paper table.
+- Figure 4 uses the same display label and unchanged accuracy values.
+- PDF text floors: Figure 1 5.595 pt; Figure 2 5.693 pt; Figure 3 5.5 pt;
+  Figure 4 5.3 pt.
+- Strict collision audits report zero failures and zero warnings for Figures 1,
+  3, and 4. Figure 2 retains the earlier zero-failure/zero-warning audit because
+  its raster capture was not altered.
+- Figures 3 and 4 are single-panel quantitative figures, so the multi-panel
+  alignment gate is not applicable.

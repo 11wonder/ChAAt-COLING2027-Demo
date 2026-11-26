@@ -184,7 +184,7 @@ def make_architecture():
     body.append(text(22, 49, "DATA TIERS", 6.8, 700, ident="n:data-title"))
     tiers = [
         ("50 diagnostic core", "source-verified"),
-        ("41 real-exam items", "ecological validity"),
+        ("41 exam-style items", "mostly mock exams"),
         ("6 open-ended tasks", "explanation"),
     ]
     for index, (title, subtitle) in enumerate(tiers):
@@ -220,7 +220,7 @@ def make_architecture():
         ("Key audit", 70),
         ("Exact match", 91),
         ("Rubric review", 112),
-        ("3-rater adjudication", 133),
+        ("Multi-rater review", 133),
         ("Saved outputs re-grade", 158),
     ]
     for value, y in scoring_lines:

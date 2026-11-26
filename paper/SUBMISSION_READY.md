@@ -5,7 +5,7 @@
 - Figure contract: `figure_brief.md`
 - Figure exports and QA: `figs/qa/`
 - Video preview: `http://127.0.0.1:57692/editor`
-- Previous approved MP4: `../coling2027-demo-motion/out/final.mp4` (uses pre-`core50` values; do not submit until regenerated)
+- Previous approved MP4: `../coling2027-demo-motion/out/final.mp4` (stale; it predates the corrected exam-style terminology, blind-third-rater wording, and updated figures, so it must not be submitted without regeneration)
 - Credential-free demo: `../app_demo.py`
 - Software license: `../LICENSE`
 - Data license terms: `../DATA_LICENSE.md`

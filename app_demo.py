@@ -14,7 +14,7 @@ DIMENSIONS = {
     "classical": "Classical Chinese",
     "dialect": "Dialect",
     "slang": "Internet Slang",
-    "pragmatics": "Pragmatics",
+    "pragmatics": "Pragmatics & pronunciation",
 }
 ENGLISH_DIMENSION_LABELS = {
     **DIMENSIONS,
@@ -22,7 +22,7 @@ ENGLISH_DIMENSION_LABELS = {
     "古汉语": "Classical Chinese",
     "方言书面语": "Dialect",
     "网络新词与谐音": "Internet Slang",
-    "歧义与语用": "Pragmatics",
+    "歧义与语用": "Pragmatics & pronunciation",
 }
 MODEL_ORDER = [
     "DeepSeek Flash",
@@ -72,7 +72,7 @@ def dimension_accuracy(summary):
         "Classical Chinese",
         "Dialect",
         "Internet Slang",
-        "Pragmatics",
+        "Pragmatics & pronunciation",
     ]
     table = table[[column for column in ordered if column in table.columns]]
     return table
@@ -114,7 +114,7 @@ with st.sidebar:
     st.divider()
     st.markdown("**Benchmark**")
     st.write("50 hard items")
-    st.write("41 real-exam items")
+    st.write("41 exam-style items")
     st.write("6 open-ended tasks")
     st.write("Five Chinese-internal dimensions")
 
@@ -138,7 +138,10 @@ if not loaded:
         ("Classical Chinese", "Classical-to-modern sense shifts"),
         ("Dialect", "Cantonese words and aspect markers"),
         ("Internet Slang", "Context-dependent recent usage"),
-        ("Pragmatics", "Ambiguity and honorific direction"),
+        (
+            "Pragmatics & pronunciation",
+            "Ambiguity, honorific direction, and character pronunciation",
+        ),
     ]
     for column, (label, description) in zip(dimensions, labels):
         with column:
@@ -270,8 +273,8 @@ with method_tab:
         """
         1. **50 hard items** test five Chinese-internal dimensions with
            source-verified answers.
-        2. **41 real-exam items** check ecological validity against authentic
-           school-exam material.
+        2. **41 exam-style items**, mostly from public mock exams and
+           exam-preparation material, provide ecological context.
         3. **6 open tasks** evaluate explanation and production rather than
            answer selection.
         """
@@ -284,8 +287,8 @@ with method_tab:
           four-option items.
         - Six models, three runs, temperature 0, and no browser or external
           tools.
-        - Two human raters for all 36 open-ended answers, with six initial
-          disagreements adjudicated.
+        - Two raters plus an independent blind third rater for all 36
+          open-ended answers.
         - Per-item pass rate and discrimination for capability-gap analysis.
         """
     )

@@ -34,7 +34,7 @@ ENGLISH_LABELS = {
     "古汉语": "Classical\nChinese",
     "方言书面语": "Dialect",
     "网络新词与谐音": "Slang",
-    "歧义与语用": "Pragmatics",
+    "歧义与语用": "Pragmatics &\nPronunciation",
     "字音字形与病句": "Language Use",
     "文化常识": "Culture",
 }
@@ -43,7 +43,7 @@ DIMENSION_ORDER = [
     "Classical\nChinese",
     "Dialect",
     "Slang",
-    "Pragmatics",
+    "Pragmatics &\nPronunciation",
 ]
 
 

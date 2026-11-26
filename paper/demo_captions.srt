@@ -1,0 +1,71 @@
+1
+00:00:00,000 --> 00:00:06,500
+Chinese language models can score well on general benchmarks,
+
+2
+00:00:06,500 --> 00:00:12,000
+yet still misread idioms, classical words, or Cantonese grammar.
+
+3
+00:00:12,000 --> 00:00:17,232
+ChAAt exposes these language-specific gaps.
+
+4
+00:00:17,432 --> 00:00:23,500
+The demo loads six models, fifty hard items, and three repeated runs.
+
+5
+00:00:23,500 --> 00:00:31,094
+No API key is needed, and no model can access tools or the web.
+
+6
+00:00:31,294 --> 00:00:38,000
+The overview ranks models from 100 percent down to 33 percent.
+
+7
+00:00:38,000 --> 00:00:44,000
+The capability map shows where performance breaks.
+
+8
+00:00:44,000 --> 00:00:50,321
+GPT-4o mini reaches 28 percent on idioms and 13 percent on Classical Chinese.
+
+9
+00:00:50,521 --> 00:00:57,000
+ChAAt also supports item-level inspection.
+
+10
+00:00:57,000 --> 00:01:04,000
+GPT-4o mini interprets ceng ji he shi as “a long time ago.”
+
+11
+00:01:04,000 --> 00:01:11,707
+The verified meaning is “not long ago”; the UI shows both answers and the explanation.
+
+12
+00:01:11,907 --> 00:01:17,000
+The benchmark has three tiers.
+
+13
+00:01:17,000 --> 00:01:24,000
+Fifty hard items, 41 exam-style items, and six open-ended tasks.
+
+14
+00:01:24,000 --> 00:01:29,994
+Answer positions are balanced, and every request is evaluated without external search.
+
+15
+00:01:30,194 --> 00:01:36,500
+Two people scored all 36 open-ended answers.
+
+16
+00:01:36,500 --> 00:01:44,132
+Two raters scored all 36 answers, followed by a blind third rater; three-rater ICC was 0.96.
+
+17
+00:01:44,332 --> 00:01:51,000
+ChAAt turns scores into an interpretable capability map and concrete failure cases.
+
+18
+00:01:51,000 --> 00:01:59,069
+It supports model selection, linguistic diagnosis, and reproducible evaluation.

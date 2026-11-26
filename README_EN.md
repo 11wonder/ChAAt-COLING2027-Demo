@@ -9,10 +9,6 @@ This repository accompanies the COLING 2027 System Demonstrations submission
 *ChAAt: A Chinese-specific Ability Atlas for Probing Linguistic Diversity in
 Large Language Models*.
 
-- Paper: `paper/main_submission_final.pdf`
-- LaTeX source: `paper/main.tex`
-- External-validation plan: `docs/EXTERNAL_VALIDATION_PLAN.md`
-
 ## Demonstration
 
 ```powershell
@@ -26,12 +22,12 @@ does not access the network.
 ## Evaluation tiers
 
 - 50-item de-duplicated diagnostic core
-- 41 real-school-exam validity items
+- 41 exam-style validity items, mostly from public mock exams
 - 6 open-ended production tasks
 
 The core covers idiom, classical Chinese, dialect, internet slang, and
-pragmatics. Six models are evaluated three times at temperature zero with
-external search disabled.
+pragmatics/pronunciation. Six models are evaluated three times at temperature
+zero with external search disabled.
 
 | Model | Overall |
 | --- | ---: |
@@ -53,31 +49,14 @@ python run_paper_experiment.py `
 
 python make_paper_table.py
 python make_paper_figures.py
-python compute_bootstrap_ci.py
-python compute_pairwise_tests.py
-python audit_question_bank.py
-```
-
-Exploratory probes:
-
-```powershell
-python run_paper_experiment.py `
-  --questions data/questions_robustness_paraphrase10.json `
-  --models deepseek,qwen,glm,gpt4omini,gpt5,ollama `
-  --repeats 1 `
-  --outdir results/noweb_all/core50_paraphrase10
-
-python run_open_probe.py `
-  --questions data/questions_robustness_open5.json `
-  --models deepseek,qwen,glm,gpt4omini,gpt5,ollama `
-  --outdir results/noweb_all/core50_open5
 ```
 
 ## Licensing
 
 Software is released under the MIT License. ChAAt-authored diagnostic items are
-released under CC BY 4.0. Third-party examination excerpts are not
-redistributed. See `LICENSE` and `DATA_LICENSE.md`.
+released under CC BY 4.0. Three core items adapted from exam-preparation
+sources, and the separate exam-style tier, remain under their original terms
+and are not relicensed. See `LICENSE` and `DATA_LICENSE.md`.
 
 ## Positioning
 

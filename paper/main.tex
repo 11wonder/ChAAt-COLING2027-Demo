@@ -18,7 +18,7 @@ Jilin University}
 \maketitle
 
 \begin{abstract}
-We present \textsc{ChAAt}, an auditable system for diagnosing \emph{Chinese-internal linguistic gaps} in large language models. Instead of reporting only aggregate benchmark scores, ChAAt links each capability gap to source-verified items, model outputs, explanations, and item-level statistics. The demonstration combines a 50-item diagnostic core, a 41-item real-exam validity tier, and six open-ended production tasks. On the de-duplicated core, six models are evaluated three times at temperature zero with external search disabled. Overall accuracy ranges from 100\% for DeepSeek Flash and 92\% for GPT-5.4 to 31\% for GPT-4o mini; the latter reaches 28\% on idioms and 13\% on classical Chinese. The interface supports model-by-dimension comparison and drill-down from a low-scoring cell to the exact failed item. ChAAt is designed as a compact diagnostic instrument and reproducible system demonstration, not as a replacement for large-scale Chinese knowledge benchmarks.
+We present \textsc{ChAAt}, an auditable system for diagnosing \emph{Chinese-internal linguistic gaps} in large language models. Instead of reporting only aggregate benchmark scores, ChAAt links each capability gap to source-verified items, model outputs, explanations, and item-level statistics. The demonstration combines a 50-item diagnostic core, a 41-item exam-style validity set, and six open-ended production tasks. On the de-duplicated core, six models are evaluated three times at temperature zero with external search disabled. Overall accuracy separates a frontier cluster (77--100\%) from lower-capability models (31--66\%). DeepSeek Flash saturates at 100\%, but its four-item lead over GPT-5.4 is not statistically supported by a paired McNemar test ($p{=}0.125$). GPT-4o mini reaches 28\% on idioms and 13\% on classical Chinese. The interface supports model-by-dimension comparison and drill-down from a low-scoring cell to the exact failed item. ChAAt is designed as a compact diagnostic instrument and reproducible system demonstration, not as a replacement for large-scale Chinese knowledge benchmarks.
 \end{abstract}
 
 \section{Introduction}
@@ -70,7 +70,7 @@ EasyJudge & System & Response evaluation & Efficient judge model plus visualizat
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figs/fig2_interface.pdf}
-\caption{The ChAAt item-level failure view. Selecting a model and dimension exposes exact failed items with expected answers, model outputs, and source-grounded explanations while retaining access to the aggregate capability views.}
+\caption{The ChAAt item-level failure view. Selecting a model and dimension exposes exact failed items with expected answers, model outputs, and source-grounded explanations while retaining access to the aggregate capability views. The expanded item asks the meaning of \textit{ceng ji he shi}; GPT-4o mini selected B (``a long time ago'') while the key is E (``not long ago'').}
 \label{fig:system}
 \end{figure*}
 
@@ -78,7 +78,7 @@ EasyJudge & System & Response evaluation & Efficient judge model plus visualizat
 ChAAt targets model evaluators, linguists auditing Chinese-specific coverage, and practitioners choosing models for regional or educational use. A reviewer selects a tier, loads a bundled run or supplies a licensed JSON bank, chooses a model, compares the overall and dimension views, and drills into any failed item. Automatic scoring remains inspectable: changing a key or rubric can re-grade saved outputs without repeating model calls.
 
 \paragraph{Three tiers.}
-(1) A de-duplicated \emph{diagnostic core} (50 items, 13 idiom, 15 classical, 9 dialect, 8 slang, and 5 pragmatics) for the main experiment; (2) \emph{real-exam validity} (41 middle/high-school exam items) for ecological grounding; and (3) \emph{open-ended production} (6 tasks) to test explanation rather than option recognition.
+(1) A de-duplicated \emph{diagnostic core} (50 items, 13 idiom, 15 classical, 9 dialect, 8 slang, and 5 pragmatics/pronunciation) for the main experiment; (2) \emph{exam-style validity} (41 items, mostly from public mock-exam and exam-preparation material) for ecological context; and (3) \emph{open-ended production} (6 tasks) to test explanation rather than option recognition.
 
 \paragraph{Item-writing recipe.} We choose a misconception cluster; write several correct and plausible-but-false statements so that one wrong judgment fails the item; make each distractor correspond to a real error type (modern meaning, literal reading, wrong direction, wrong degree, or wrong aspect); keep options parallel; and verify every statement against an authoritative dictionary or official list (\citealp{zdic} for idioms and classical Chinese, \citealp{wordshk} for Cantonese). This recipe is intended to make failures explainable, not merely difficult.
 
@@ -99,36 +99,36 @@ Dialect & Cantonese \textit{hoi} after a verb & Habitual aspect & Separates lexi
 \label{tab:examples}
 \end{table*}
 
-\paragraph{Calibration.} For each item we compute the pass rate $p$ and use the 0.2--0.8 band to prioritize discriminating items; eight all-correct items are retained as coverage anchors. $D$ is the top-half minus bottom-half model accuracy. Final numbers are averaged over three runs at temperature 0.
+\paragraph{Calibration.} For each item we compute the pass rate $p$ and use the 0.2--0.8 band to prioritize discriminating items; eight all-correct items are retained as coverage anchors. Models are ranked by overall accuracy, and $D$ is the mean accuracy of the top two models minus that of the bottom two. Final numbers are averaged over three runs at temperature 0.
 
 \section{Experimental Setup}
 
 The six main models are DeepSeek Flash, GPT-5.4, Qwen Max, GLM-4 Plus, GPT-4o mini, and Ollama Qwen3.5-4B. GPT-5.4 mini is evaluated as a matched small-model control; Qwen Plus appeared only in an exploratory validity-tier batch and is not part of the final six-model results. Each main-table model answers 50 items three times at temperature 0. Multi-select items are scored as correct only when the selected letter set exactly matches the key.
 
-\textbf{Statistical reporting.} The unit of analysis is an item ($n=50$). Answer letters were deterministically permuted and balanced separately for the 38 six-option and six four-option multi-select items before the main run, removing answer-position cues. Reported accuracy is the mean over the three runs, with the standard deviation (SD) across runs; because temperature 0 is near-deterministic, most SDs are zero. All 900 main-benchmark responses were non-empty. We report no null-hypothesis significance tests; model comparisons are descriptive. \textbf{Search policy.} No model was given tools or external search access in the main run; DeepSeek's thinking mode was disabled for open-ended answers so that reasoning tokens could not crowd out the response.
+\textbf{Statistical reporting.} The unit of analysis is an item ($n=50$). Answer letters were deterministically permuted and balanced separately for the 38 six-option and six four-option multi-select items before the main run, removing answer-position cues. Reported accuracy is the mean over the three runs, with the standard deviation (SD) across runs; because temperature 0 is near-deterministic, most SDs are zero. All 900 main-benchmark responses were non-empty. We report descriptive comparisons plus an exact paired McNemar test for the closest pair. \textbf{Search policy.} No model was given tools or external search access in the main run; DeepSeek's thinking mode was disabled for open-ended answers so that reasoning tokens could not crowd out the response.
 
 \section{Results}
 
-\begin{table*}[t]
+\begin{table}[t]
 \centering
-\small
-\resizebox{\textwidth}{!}{%
+\scriptsize
+\setlength{\tabcolsep}{2pt}
 \begin{tabular}{lcccccc}
 \toprule
-\textbf{Model} & \textbf{Idiom} & \textbf{Classical} & \textbf{Dialect} & \textbf{Slang} & \textbf{Pragmatics} & \textbf{Overall} \\
+\textbf{Model} & \textbf{Idiom} & \textbf{Class.} & \textbf{Dial.} & \textbf{Slang} & \textbf{Prag./pron.} & \textbf{Overall} \\
 \midrule
 DeepSeek Flash & 100 & 100 & 100 & 100 & 100 & 100 \\
 GPT-5.4 & 92 & 87 & 100 & 100 & 80 & 92 \\
-GPT-5.4 mini (control) & 92 & 76 & 100 & 100 & 80 & 88.7 \\
+GPT-5.4 mini (ctrl.) & 92 & 76 & 100 & 100 & 80 & 88.7 \\
 Qwen Max & 77 & 78 & 100 & 83 & 73 & 82 \\
 GLM-4 Plus & 79 & 67 & 89 & 88 & 67 & 77 \\
 Ollama Qwen3.5-4B & 77 & 47 & 56 & 100 & 60 & 66 \\
 GPT-4o mini & 28 & 13 & 56 & 50 & 20 & 31.3 \\
 \bottomrule
-\end{tabular}}
-\caption{Accuracy (\%) of the six main models plus the matched GPT-5.4 mini control on the 50-item de-duplicated diagnostic core. Answer positions were deterministically balanced before the main run. The unit of analysis is an item ($n=50$); each cell is the mean of three runs at temperature 0.}
+\end{tabular}
+\caption{Accuracy (\%) of the six main models plus the matched GPT-5.4 mini control on the 50-item de-duplicated diagnostic core. Class.=classical Chinese; Dial.=dialect; Prag./pron.=pragmatics and pronunciation. Answer positions were deterministically balanced before the main run. The unit of analysis is an item ($n=50$); each cell is the mean of three runs at temperature 0.}
 \label{tab:main}
-\end{table*}
+\end{table}
 
 Table~\ref{tab:main} reports the main results; Figure~\ref{fig:heatmap} and Figure~\ref{fig:radar} omit the matched mini control for visual clarity. The six-model gradient is 100 / 92 / 82 / 77 / 66 / 31. Of the 50 items, 42 show at least one main-model failure and 8 are all-correct coverage anchors. Item-cluster bootstrap intervals (10,000 resamples) are 84--98 for GPT-5.4, 79--96 for GPT-5.4 mini, 71--91 for Qwen Max, 65--88 for GLM-4 Plus, 52--78 for the local 4B model, and 19--44 for GPT-4o mini; DeepSeek Flash is saturated at 100.
 
@@ -150,11 +150,11 @@ For the closest comparison, DeepSeek Flash and GPT-5.4 disagree on four items an
 \label{fig:radar}
 \end{figure}
 
-\paragraph{Validity tier.} On the 41 real-exam items, DeepSeek Flash and Qwen Max score 100\%, followed by GPT-5.4 at 92.7\%, GLM-4 Plus 85.4\%, Ollama Qwen3.5-4B 80.5\%, and GPT-4o mini 51.2\%. Nine items show broad model splits and 16 additional items show non-uniform performance; 16 are all-correct. Real-exam items therefore provide authority while remaining relatively easy for frontier models.
+\paragraph{Validity tier.} On the 41 exam-style items, DeepSeek Flash and Qwen Max score 100\%, followed by GPT-5.4 at 92.7\%, GLM-4 Plus 85.4\%, Ollama Qwen3.5-4B 80.5\%, and GPT-4o mini 51.2\%. Nine items show broad model splits and 16 additional items show non-uniform performance; 16 are all-correct. These items, mostly from public mock exams and exam-preparation material, provide ecological context rather than official-exam authority.
 
-\paragraph{Production tier.} Two raters independently scored all 36 answers (exact agreement 30/36; within 0.5 points 32/36; ICC(2,k)=0.90; quadratic weighted kappa 0.73), followed by adjudication of six disagreements. A blind third rater then scored all 36 responses. Three-rater reliability was ICC(2,1)=0.888 and ICC(2,k)=0.960, with mean pairwise quadratic weighted kappa 0.740. Two-rater means were 94.6\% for DeepSeek Flash and GPT-5.4, 85.7\% for GLM-4 Plus, 82.1\% for Qwen Max, 78.6\% for the local 4B model, and 57.1\% for GPT-4o mini. The blind third-rater scores were 100.0\% for GPT-5.4; 92.9\% for DeepSeek Flash and Qwen Max; 85.7\% for GLM-4 Plus and the local 4B model; and 57.1\% for GPT-4o mini. With only six tasks, we report both views rather than treating their small ranking differences as a stable model ordering.
+\paragraph{Production tier.} Two raters independently scored all 36 answers (exact agreement 30/36; within 0.5 points 32/36; ICC(2,k)=0.90; quadratic weighted kappa 0.73). A blind third rater then independently scored all 36 responses. Three-rater reliability was ICC(2,1)=0.888 and ICC(2,k)=0.960, with mean pairwise quadratic weighted kappa 0.740. Two-rater means were 94.6\% for DeepSeek Flash and GPT-5.4, 85.7\% for GLM-4 Plus, 82.1\% for Qwen Max, 78.6\% for the local 4B model, and 57.1\% for GPT-4o mini. The blind third-rater scores were 100.0\% for GPT-5.4; 92.9\% for DeepSeek Flash and Qwen Max; 85.7\% for GLM-4 Plus and the local 4B model; and 57.1\% for GPT-4o mini. With only six tasks, we report both views rather than treating their small ranking differences as a stable model ordering.
 
-\paragraph{Item-level discrimination.} With six models, the highest empirical discrimination is $D{=}0.67$. It occurs on seven items spanning classical polysemy and function words, idiom misconception clusters, Cantonese grammar, and pronunciation. Their overall pass rates range from 17\% to 83\%, so high discrimination is not synonymous with near-zero accuracy. The small number of pragmatics items ($n{=}5$) makes that dimension exploratory rather than population-representative.
+\paragraph{Item-level discrimination.} With six models, 12 items attain the maximum empirical discrimination, $D{=}1.00$: six classical, three Cantonese, two idiom, and one pronunciation item. Their overall pass rates range from 33\% to 67\%, so high discrimination is not synonymous with near-zero accuracy. The pragmatics/pronunciation group ($n{=}5$) contains two pronunciation items, one ambiguity item, and two honorific items, so we report that dimension as exploratory rather than population-representative.
 
 \paragraph{Robustness probe.} We rewrote ten discriminating items while preserving their targets and answer semantics, then evaluated each model once. Accuracy on the matched original subset was 100/70/80/83/50/37 for DeepSeek Flash, GPT-5.4, Qwen Max, GLM-4 Plus, the local 4B model, and GPT-4o mini, respectively; on paraphrases it was 100/100/90/80/90/60. The rank correlation is weak and non-significant ($\rho{=}0.47$, $p{=}0.35$, six models). On five additional option-free tasks scored by independent rubric review, accuracy ranged from 80\% for DeepSeek Flash to 55\% for GLM-4 Plus. These probes provide no evidence of a systematic collapse under surface paraphrase, but both are too small to establish contamination resistance or enter the main ranking.
 
@@ -164,7 +164,7 @@ Representative failure patterns are: classical--modern polysemy (weak models rea
 
 \section{Limitations}
 
-The 50-item core is a diagnostic probe, not a population-level estimate of Chinese competence. Dimension sizes range from five pragmatics items to fifteen classical items, and the six-model leaderboard should not be generalized to other model families or newer checkpoints. Cantonese items are sourced from words.hk; formal native-speaker validation remains necessary. The 41 real-exam items improve ecological grounding but do not establish construct coverage. All 36 open-ended answers were scored by two independent raters, six disagreements were adjudicated, and all 36 were subsequently scored by a blind third rater. RegioZH, CHENGYU-BENCH, and YUE-PUB are positioned as complementary resources; running the exact same model set on their licensed releases is the next external-validity step.
+The 50-item core is a diagnostic probe, not a population-level estimate of Chinese competence. Dimension sizes range from five pragmatics/pronunciation items to fifteen classical items, and the six-model leaderboard should not be generalized to other model families or newer checkpoints. Cantonese items are sourced from words.hk; formal native-speaker validation remains necessary. The 41 exam-style items, many of which are mock or exam-preparation items, provide ecological context but do not establish construct coverage. Items also derive from public dictionaries, official word lists, and exam-preparation material, so pretraining contamination cannot be excluded; the paraphrase and option-free probes are exploratory. All 36 open-ended answers were independently scored by two raters and then by a blind third rater. RegioZH, CHENGYU-BENCH, and YUE-PUB are positioned as complementary resources; running the exact same model set on their licensed releases is the next external-validity step.
 
 \section{Demo Plan}
 
@@ -172,7 +172,7 @@ The live demo loads six precomputed model runs without an API key. A reviewer ca
 
 \section*{Software and Data Availability}
 
-The software is released under the MIT License. ChAAt-authored diagnostic items are released under CC BY 4.0. Third-party exam excerpts are not redistributed in the public package; their sources and derived statistics are documented separately. Dictionary sources (\citealp{zdic}; \citealp{wordshk}) are cited where items were verified. The submission package includes the interface, precomputed demo data, evaluation scripts, and an MP4 demonstration.
+The software is released under the MIT License. ChAAt-authored diagnostic items are released under CC BY 4.0; three core items adapted from exam-preparation sources are explicitly excluded from that license. Third-party exam excerpts are not relicensed, and their sources and derived statistics are documented separately. Dictionary sources (\citealp{zdic}; \citealp{wordshk}) are cited where items were verified. The submission package includes the interface, precomputed demo data, and evaluation scripts. A credential-free demo is available in the review package; the public repository and hosted demo will be released upon acceptance.
 
 \section*{Ethics and Broader Impact}
 

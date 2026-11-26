@@ -14,8 +14,8 @@
   the original item and provenance.
 - New contribution: the review layer is the only coral-accented component.
 - Existing components: three data tiers, model runner, scoring and audit.
-- Controls/robustness: tool/web access disabled; key audit and human
-  adjudication are separate from score calculation.
+- Controls/robustness: tool/web access is disabled; key audit and multi-rater
+  review are separate from score calculation.
 - Caption draft: System architecture. Source-audited items feed a controlled
   model runner and scoring layer; diagnostic views retain a trace back to each
   item instead of reporting only an aggregate score.
@@ -43,3 +43,5 @@
 - The system labels and item content are taken from the current local demo.
 - FN-E8-03 remains the demonstration failure case.
 - The screenshot contains no credentials, private paths, or browser chrome.
+- The 41-item tier contains exam-style items drawn mostly from public mock
+  exams and exam-preparation material; it is not described as official exams.

@@ -40,12 +40,14 @@ def main():
     ]
     cols = [c for c in cols if c in d.columns]
     d = d[cols]
+    d = d.rename(columns={"歧义与语用": "歧义、语用与字音"})
+    display_cols = list(d.columns)
 
     lines = []
     lines.append("| 模型 | " + " | ".join(d.columns) + " | 总体 |")
     lines.append("| --- | " + " | ".join(["---"] * (len(d.columns) + 1)) + " |")
     for m in order:
-        cells = [f"{d.loc[m, c]:.0%}" for c in cols]
+        cells = [f"{d.loc[m, c]:.0%}" for c in display_cols]
         ov = overall.loc[overall["model"] == m, "accuracy"].iloc[0]
         sd = overall.loc[overall["model"] == m, "std"].iloc[0]
         cells.append(f"{ov:.0%}±{sd:.0%}")

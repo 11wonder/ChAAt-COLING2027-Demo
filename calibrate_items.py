@@ -44,6 +44,9 @@ def main():
 
     model_acc = df.groupby("model")["correct"].mean().sort_values(ascending=False)
     models = list(model_acc.index)
+    # Fixed comparison groups: the two strongest minus the two weakest
+    # models by overall accuracy. This avoids a floating "half" definition
+    # for a six-model leaderboard.
     top = models[:2]
     bottom = models[-2:]
 

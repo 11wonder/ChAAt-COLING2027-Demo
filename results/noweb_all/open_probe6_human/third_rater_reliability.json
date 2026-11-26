@@ -1,0 +1,14 @@
+{
+  "n_answers": 36,
+  "ICC_2_1": 0.887606623181134,
+  "ICC_2_k": 0.959500994395227,
+  "pairwise_quadratic_weighted_kappa": [
+    0.7295373665480427,
+    0.6804322655345427,
+    0.8102766798418972
+  ],
+  "mean_pairwise_quadratic_weighted_kappa": 0.7400821039748275,
+  "third_vs_prior_exact": 31,
+  "third_vs_prior_within_0_5": 32,
+  "third_vs_prior_mean_absolute_difference": 0.125
+}

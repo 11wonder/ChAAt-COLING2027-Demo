@@ -9,6 +9,10 @@ This repository accompanies the COLING 2027 System Demonstrations submission
 *ChAAt: A Chinese-specific Ability Atlas for Probing Linguistic Diversity in
 Large Language Models*.
 
+- Paper: `paper/main_final.pdf`
+- LaTeX source: `paper/main.tex`
+- External-validation plan: `docs/EXTERNAL_VALIDATION_PLAN.md`
+
 ## Demonstration
 
 ```powershell

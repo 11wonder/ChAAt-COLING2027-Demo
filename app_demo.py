@@ -53,6 +53,10 @@ def load_demo_data():
     return details, questions, summary
 
 
+def answer_letters(value):
+    return {char for char in str(value).upper() if char in "ABCDEFGH"}
+
+
 def dimension_accuracy(summary):
     table = (
         summary[summary["dimension"] != "overall"]
@@ -150,6 +154,7 @@ if not loaded:
     st.stop()
 
 details, questions, summary = load_demo_data()
+question_options = {item["id"]: item.get("options", []) for item in questions}
 dim_table = dimension_accuracy(summary)
 overall = (
     summary[summary["dimension"] == "overall"]
@@ -259,6 +264,26 @@ with error_tab:
     else:
         for _, row in failures.iterrows():
             with st.expander(f"{row['id']} · {row['question']}"):
+                options = question_options.get(row["id"], [])
+                expected = answer_letters(row["expected"])
+                chosen = answer_letters(row["output"])
+                if options:
+                    st.markdown("**Options**")
+                    for option in options:
+                        option = option.strip()
+                        letter = option[0]
+                        body = option[2:].lstrip(" .．、)")
+                        is_correct = letter in expected
+                        is_chosen = letter in chosen
+                        if is_correct and is_chosen:
+                            note = " — **correct answer**, and the model chose it"
+                        elif is_correct:
+                            note = " — **correct answer**"
+                        elif is_chosen:
+                            note = " — **the model chose this**"
+                        else:
+                            note = ""
+                        st.markdown(f"- **{letter}.** {body}{note}")
                 st.markdown(f"**Expected answer:** `{row['expected']}`")
                 st.markdown(f"**Model answer:** `{row['output']}`")
                 st.markdown(f"**Why it matters:** {row['explanation']}")
